@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Manrope:wght@400;600" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f1f1f1; font-family: Helvetica, sans-serif; padding: 24px; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+  .label { text-align: center; font-size: 12px; color: #666; margin-bottom: 8px; max-width: 400px; }
+  .col { display: flex; flex-direction: column; align-items: center; }
+
+  .card { width: 400px; height: 500px; border-radius: 14px; overflow: hidden; position: relative; }
+
+  /* ---- dark editorial duotone-photo base ---- */
+  .dark { background: #07131a; color: #fff; }
+  .dark .photo { position: absolute; inset: 0; background-size: cover; filter: grayscale(1) contrast(1.1); }
+  .dark .duotone { position: absolute; inset: 0; background: linear-gradient(160deg, #0a3b3b 0%, #0a1a3a 100%); mix-blend-mode: color; }
+  .dark .scrim { position: absolute; inset: 0; background: linear-gradient(to top, #07131af5 10%, #07131a66 55%, #07131aa6 100%); }
+  .dark .inner { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; padding: 28px; }
+  .logo { direction: ltr; text-align: left; font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 500; font-size: 13px; color: #5eead4; letter-spacing: 0.5px; }
+  .divider { width: 60px; height: 3px; background: #c9a24b; margin: 8px auto; }
+  .footer { display: flex; justify-content: space-between; direction: rtl; font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 400; font-size: 12px; color: #9fd8d8; }
+  .cta { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 500; }
+  .swipe { direction: ltr; }
+
+  /* ---- Slide 1: stat card, neon-lime stat ---- */
+  .stat-block { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 10px; }
+  .stat { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 700; font-size: 64px; color: #a3ff12; line-height: 1; text-shadow: 0 0 20px rgba(163,255,18,0.55); }
+  .tag { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 1px; color: #bcd; direction: rtl; }
+  .headline { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 700; font-size: 21px; direction: rtl; line-height: 1.5; max-width: 320px; }
+  .sub { font-family: 'Manrope', Helvetica, sans-serif; font-weight: 400; font-size: 14px; color: #cfe; direction: ltr; margin-top: 4px; }
+  .source { font-family: 'Manrope', Helvetica, sans-serif; font-weight: 400; font-size: 12px; color: #9fd8d8; margin-top: 10px; direction: ltr; }
+
+  /* ---- Slide 2: supporting/stakes card ---- */
+  .support-block { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 12px; }
+  .headline-sm { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 700; font-size: 25px; direction: rtl; line-height: 1.5; max-width: 320px; }
+  .sub-sm { font-family: 'Manrope', Helvetica, sans-serif; font-weight: 400; font-size: 14px; color: #cfe; direction: ltr; max-width: 300px; }
+  .body-ar { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 400; font-size: 15px; color: #d7e8e8; direction: rtl; line-height: 1.8; max-width: 310px; margin-top: 4px; }
+  .body-en { font-family: 'Manrope', Helvetica, sans-serif; font-weight: 400; font-size: 13px; color: #9fd8d8; direction: ltr; line-height: 1.6; max-width: 290px; }
+
+  /* ---- Slide 3: light quote card ---- */
+  .light { background: linear-gradient(160deg, #faf6ee 0%, #f0e6d2 100%); color: #1a2b2b; }
+  .light .inner { height: 100%; display: flex; flex-direction: column; padding: 28px; }
+  .quote-mark { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 700; font-size: 72px; color: #7a9a1a; line-height: 1; opacity: 0.55; }
+  .quote-block { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 14px; }
+  .quote-ar { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 700; font-size: 22px; direction: rtl; line-height: 1.7; max-width: 320px; color: #15221f; }
+  .quote-en { font-family: 'Manrope', Helvetica, sans-serif; font-weight: 400; font-size: 14px; direction: ltr; color: #4a5a55; max-width: 300px; }
+  .light .footer { color: #8a7a55; }
+  .light .logo { color: #8a6d2f; }
+
+  /* ---- Slide 4: closing/CTA card ---- */
+  .closing-block { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 16px; }
+  .closing-ar { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 700; font-size: 23px; direction: rtl; line-height: 1.7; max-width: 320px; }
+  .closing-en { font-family: 'Manrope', Helvetica, sans-serif; font-weight: 400; font-size: 14px; direction: ltr; color: #cfe; max-width: 300px; }
+  .follow-badge { font-family: 'Tajawal', Helvetica, sans-serif; font-weight: 700; font-size: 14px; color: #07131a; background: #a3ff12; padding: 8px 18px; border-radius: 20px; box-shadow: 0 0 14px rgba(163,255,18,0.4); margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<div class="col">
+  <div class="label">Slide 1/4 — hook: 75% stat (PwC 29th CEO Survey, UAE, Jan 2026)</div>
+  <div class="card dark">
+    <div class="photo" style="background-image: url('https://picsum.photos/seed/aazaian-skyline/400/500');"></div>
+    <div class="duotone"></div>
+    <div class="scrim"></div>
+    <div class="inner">
+      <div class="logo">AI with AZ | @aazaian</div>
+      <div class="stat-block">
+        <div class="stat">75%</div>
+        <div class="tag">الرؤساء التنفيذيون في الإمارات&nbsp;/&nbsp;UAE CEOs</div>
+        <div class="divider"></div>
+        <div class="headline">يملكون خطة واضحة لتبني&nbsp;الذكاء&nbsp;الاصطناعي</div>
+        <div class="sub">Have a clear AI adoption roadmap</div>
+        <div class="source">Source: PwC 29th CEO Survey — UAE findings, Jan 2026</div>
+      </div>
+      <div class="footer"><span class="swipe">اسحب للمزيد ←</span><span style="direction: ltr;">1 / 4</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="label">Slide 2/4 — stakes: a roadmap isn't readiness</div>
+  <div class="card dark">
+    <div class="photo" style="background-image: url('https://picsum.photos/seed/aazaian-office/400/500');"></div>
+    <div class="duotone"></div>
+    <div class="scrim"></div>
+    <div class="inner">
+      <div class="logo">AI with AZ | @aazaian</div>
+      <div class="support-block">
+        <div class="headline-sm">لكن الخطة لا تعني الجاهزية</div>
+        <div class="sub-sm">A roadmap isn't readiness</div>
+        <div class="divider"></div>
+        <div class="body-ar">الفارق الحقيقي بين الشركات في 2026 لن يكون من يملك استراتيجية للذكاء الاصطناعي، بل من يعرف كيف يستخدمها فعلاً</div>
+        <div class="body-en">The real gap in 2026 won't be who has an AI strategy — it'll be who actually knows how to use it.</div>
+      </div>
+      <div class="footer"><span class="swipe">اسحب للمزيد ←</span><span style="direction: ltr;">2 / 4</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="label">Slide 3/4 — reframe quote: AI won't take your job</div>
+  <div class="card light">
+    <div class="inner">
+      <div class="logo">AI with AZ | @aazaian</div>
+      <div class="quote-block">
+        <div class="quote-mark">«</div>
+        <div class="quote-ar">الذكاء الاصطناعي لن يأخذ وظيفتك، بل من يتقنه</div>
+        <div class="divider"></div>
+        <div class="quote-en">AI won't take your job — someone using it well, will</div>
+      </div>
+      <div class="footer"><span class="swipe">اسحب للمزيد ←</span><span style="direction: ltr;">3 / 4</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="label">Slide 4/4 — closing question + follow CTA</div>
+  <div class="card dark">
+    <div class="photo" style="background-image: url('https://picsum.photos/seed/aazaian-team/400/500');"></div>
+    <div class="duotone"></div>
+    <div class="scrim"></div>
+    <div class="inner">
+      <div class="logo">AI with AZ | @aazaian</div>
+      <div class="closing-block">
+        <div class="closing-ar">السؤال ليس &laquo;هل نستخدم الذكاء الاصطناعي؟&raquo; بل &laquo;من في فريقنا يتقنه؟&raquo;</div>
+        <div class="divider"></div>
+        <div class="closing-en">The question isn't "are we using AI?" — it's "who on your team has mastered it?"</div>
+        <div class="follow-badge">تابعوا <bdi>@aazaian</bdi> للمزيد</div>
+      </div>
+      <div class="footer"><span class="cta">AI with AZ</span><span style="direction: ltr;">4 / 4</span></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
