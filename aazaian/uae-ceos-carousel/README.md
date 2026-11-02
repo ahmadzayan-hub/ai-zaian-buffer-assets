@@ -28,18 +28,25 @@ Both slides footer: تابعوا @aazaian للمزيد (handle wrapped in `<bdi>
 
 ## Caption / hashtags / alt text
 
-**STATUS: DRAFT — sent to Marketing & Branding Expert for final sign-off (consult in flight), not yet confirmed.**
+**STATUS: Confirmed by Marketing & Branding Expert (2026-11-02).**
 
-Draft caption (EN, placeholder pending specialist review):
-> 75% of UAE CEOs say they have a clear AI adoption roadmap. A roadmap isn't readiness — the real edge in 2026 is knowing how to actually use it. AI won't take your job; someone using it well, will.
+Caption (AR):
+> 75% من الرؤساء التنفيذيين في الإمارات يملكون خطة واضحة لتبني الذكاء الاصطناعي — لكن الخطة لا تعني الجاهزية. الفارق الحقيقي هو من يتقن الأداة، لا من يمتلكها فقط.
+> (PwC، المسح العالمي للرؤساء التنفيذيين، نتائج الإمارات، يناير 2026)
+> تابعوا @aazaian للمزيد.
 
-Draft hashtags (placeholder): #AIinUAE #UAECEOs #AIadoption #FutureOfWork #DigitalTransformation #AIwithAZ
+Caption (EN):
+> 75% of UAE CEOs say they have a clear AI adoption roadmap — but a roadmap isn't readiness. The real gap is who masters the tool, not who just owns the plan.
+> (PwC's 29th CEO Survey, UAE findings, Jan 2026)
+> Follow @aazaian for more.
 
-Draft alt text:
-- Slide 1: "Dark stat card reading 75% — UAE CEOs have a clear AI adoption roadmap, sourced from PwC's 29th CEO Survey, January 2026."
-- Slide 2: "Light quote card: AI won't take your job — someone using it well, will."
+Hashtags (8): #الذكاء_الاصطناعي #قيادة_الأعمال #ريادة_الأعمال #AIAdoption #UAEBusiness #CEOLeadership #FutureOfWork #AIinBusiness
 
-Content pillar: unconfirmed — no documented pillar taxonomy found in this repo or the Buffer board; asked Marketing & Branding Expert to confirm.
+Alt text:
+- Slide 1: "Dark editorial stat card with neon-lime accent. Large headline '75%.' Arabic tag 'الرؤساء التنفيذيون في الإمارات / UAE CEOs.' Arabic text 'يملكون خطة واضحة لتبني الذكاء الاصطناعي' with English translation 'Have a clear AI adoption roadmap.' Source line: 'PwC 29th CEO Survey — UAE findings, Jan 2026.' Footer: 'تابعوا @aazaian للمزيد.'"
+- Slide 2: "Light editorial quote card. Arabic quote 'الذكاء الاصطناعي لن يأخذ وظيفتك، بل من يتقنه' with English translation 'AI won't take your job — someone using it well, will.' Footer: 'تابعوا @aazaian للمزيد.'"
+
+Content pillar: **"AI & Leadership"** (recommended by Marketing & Branding Expert — stat/insight-driven posts on AI adoption in UAE business, tied to Ahmed's blended rail-engineer/AI-innovator positioning, no venture names per his locked public-positioning rule). No formal pillar taxonomy exists yet for @aazaian; this is the first post through review, so the taxonomy itself is a decision deferred to Ahmed, not invented here.
 
 ## Platform / sizing
 
