@@ -41,3 +41,5 @@ Five actual Instagram carousel PNGs rendered 1080 × 1350, with a 360-pixel cont
 6. Only then enable recurring production. Publishing remains separately permissioned.
 
 **No person or process may declare PASS for a check that was not executed.**
+## Owner decision recorded | 9 November 2026
+The owner said «اعتماد» in response to the acceptance pilot. This is recorded as **approval of the proposed pilot visual direction and design concept**. It does not constitute evidence of testing or an instruction to publish. Defect D-005 (owner concept sign-off) is closed for the pilot only. D-002, D-003, and D-004 remain open. Recurring production remains DISABLED and automatic publishing remains DISABLED. A new final release review will be required once the actual Dubai Font and independent/in-app validation are complete.
