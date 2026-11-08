@@ -9,15 +9,23 @@
     "dubai_font_integrity": "BLOCKED",
     "visual_mobile_qa": "PARTIAL",
     "platform_in_app_preview": "NOT_TESTED",
-    "final_owner_approval": "PILOT_DESIGN_APPROVED"
+    "final_owner_approval": "PILOT_DESIGN_APPROVED",
+    "mobile_360_review": "PARTIAL_OPEN_SMALL_TEXT_DEFECT"
   },
   "pilot_content_id": "AZ 2026 1109 02",
   "last_reviewed_on": "2026-11-09",
-  "remarks": "Owner approved pilot concept. Recurring production and publishing remain blocked pending Dubai Font, independent QA, and real Instagram app verification.",
+  "remarks": "Owner visual direction approved only. Full production/release remains HOLD. 360 px tiny body type and RTL order ambiguity discovered by additional review. Independent review and official Dubai Font not verified.",
   "owner_approval": {
     "scope": "Pilot visual direction and concept only",
     "date": "2026-11-09",
     "publication_authorised": false,
     "waives_open_quality_gates": false
-  }
+  },
+  "known_unresolved_defects": [
+    "D-002",
+    "D-003",
+    "D-004",
+    "D-006",
+    "D-007"
+  ]
 }
