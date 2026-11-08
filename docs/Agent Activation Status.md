@@ -9,3 +9,11 @@
 - Social platform: no direct posting performed. Human approval and final QA still required.
 
 Do not claim active agent integration based on file existence. Where available, an agent should explicitly open https://github.com/ahmadzayan-hub/ai-zaian-buffer-assets/blob/main/AGENTS.md and its own adapter file, execute a simple acknowledged configuration test, and generate a QA receipt.
+
+## Editorial design upgrade | 9 November 2026
+- PR #4 merged: mandatory prohibition of people/humanoid imagery.
+- PR #5 merged: distinctive topic-led editorial signature, official Dubai Font requirement, original palette and stronger mobile-first QA.
+- Read-back of main confirmed AGENTS.md, CLAUDE.md, MAUSBOT.md and HERMES.md contain updated rules.
+- External Claude, Mausbot and Hermes live sessions: activation/ingestion **NOT VERIFIED**; a repository update is not remote execution.
+- ChatGPT Space page update attempt blocked by upstream page_freshness_unavailable; repository main is the canonical verified copy for now.
+- No independent real-device production acceptance and no publishing performed under this upgrade.
