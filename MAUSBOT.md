@@ -1,2 +1,4 @@
 # Mausbot | AI with Zaian
 Read and obey [AGENTS.md](AGENTS.md). Primary role: subject-matched cinematic imagery and platform-specific layouts using the fixed palette. Verify Arabic shaping, accurate visible text, 360px readability and no RTA logo. Submit actual visual outputs to independent QA; do not auto-publish. This file requires explicit configuration in Mausbot; the commit alone does not enable it.
+
+**MANDATORY: No human photos, portraits, silhouettes or human-like avatars in any visual. See AGENTS.md no-people rule; reject at visual QA.**
