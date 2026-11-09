@@ -130,3 +130,14 @@ No "zero errors" without a truly independent reviewer and reproducible result. A
 
 ## Three approved pilot families (not final release)
 For every Editorial Signal asset consult [the three-format editorial system](docs/Editorial%20Signal%20Three%20Styles.md). Use Bold Ideas, Data Analysis and Tech Explainers with shared palette, Dubai Font requirement, independently reviewed facts, no people, and release HOLD until all checks pass. These are pilot directions, not auto-publishing authorization.
+
+
+## Owner authorisation | recurring review drafts | 9 November 2026
+
+Ahmed Zaian explicitly instructed «فعّل الإنتاج المتكرر». Recurring production is now authorised for REVIEW_DRAFTS_ONLY: prepare actual Instagram Carousel assets and present each package for review. Read [Recurring Draft Production](docs/Recurring%20Draft%20Production.md) and [Content Production Gate](config/Content%20Production%20Gate.json) for the current scope.
+
+This owner instruction supersedes older statements that recurring draft creation must remain disabled until final release acceptance. It permits building reviewable drafts while independent editorial/visual review, physical-device preview or per-deliverable publication approval is pending. It does not waive those checks or change their recorded results. Preserve unresolved defects, label drafts and disclose any unavailable font or test.
+
+Keep automatic_publishing_enabled=false and publication_authorised=false. The release decision stays HOLD until its actual prerequisites are satisfied. Never upload to Instagram/Buffer, schedule or publish a social post under this production permission. The existing daily ChatGPT automation is the confirmed recurring runner; external Hermes, Mausbot and Claude runtime activation remains unverified unless separately observed.
+
+Use the current Editorial Signal palette and three families. Render separate full-size slides and 360 px previews, inspect actual exports, and use a starting floor of 48 px at 1080 for substantive secondary copy (16 px when displayed at 360). A geometry check or font fallback does not prove final language, brand or mobile acceptance.

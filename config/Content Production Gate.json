@@ -2,7 +2,7 @@
   "schema_version": 1,
   "brand": "AI with Zaian",
   "status": "HOLD",
-  "recurring_production_enabled": false,
+  "recurring_production_enabled": true,
   "automatic_publishing_enabled": false,
   "required_gates": {
     "editorial_independent_review": "NOT_TESTED",
@@ -14,7 +14,7 @@
   },
   "pilot_content_id": "AZ 2026 1109 02",
   "last_reviewed_on": "2026-11-09",
-  "remarks": "Owner visual direction approved only. Full production/release remains HOLD. 360 px tiny body type and RTL order ambiguity discovered by additional review. Independent review and official Dubai Font not verified.",
+  "remarks": "Owner explicitly enabled recurring REVIEW_DRAFTS_ONLY production on 9 November 2026. The existing daily ChatGPT task is enabled and updated to Editorial Signal. Final release remains HOLD: independent review, real Instagram/mobile preview and per-deliverable owner publication approval still require actual evidence. Historical unresolved defects are retained; no check has been promoted to PASS by this activation. Automatic publishing remains disabled.",
   "owner_approval": {
     "scope": "Pilot visual direction and concept only",
     "date": "2026-11-09",
@@ -27,5 +27,28 @@
     "D-004",
     "D-006",
     "D-007"
-  ]
+  ],
+  "production_status": "ENABLED_FOR_REVIEW",
+  "production_mode": "REVIEW_DRAFTS_ONLY",
+  "release_status": "HOLD",
+  "publication_authorised": false,
+  "recurring_production_approval": {
+    "owner": "Ahmed Zaian | أحمد زيان",
+    "date": "2026-11-09",
+    "instruction": "فعّل الإنتاج المتكرر",
+    "scope": "Recurring creation of review drafts and actual carousel assets only",
+    "publication_authorised": false,
+    "waives_open_quality_gates": false
+  },
+  "automation": {
+    "provider": "ChatGPT Automations",
+    "task_id": "6a397c2a10148191a9dcd3ed2d8f1fe5",
+    "enabled": true,
+    "cadence": "DAILY",
+    "timezone": "Asia/Dubai",
+    "local_target_time": "08:00",
+    "timing_mode": "flexible_schedule",
+    "verified_on": "2026-11-09",
+    "verification_scope": "Automation update returned success and is_enabled=true. No future run result is claimed."
+  }
 }
