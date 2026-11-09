@@ -127,3 +127,6 @@ At Gate A: separate originality check and visual story concept with intended 2-s
 At Gate B: reject generic AI aesthetic, irrelevant skyline/rail imagery, over-glow, font substitute without disclosure, human depiction, factual graphics with unverified numbers, mobile text failures and duplicate recent layouts.
 At Gate C: verify embedded/outlined Dubai font actually appears in exported images; inspect each platform export at actual device-like display and within safe areas. Evidence must show dates, source, licence, Arabic and English proofreader verdict, reviewer identity and each defect resolution.
 No "zero errors" without a truly independent reviewer and reproducible result. Any missing font or live analytics check is NOT VERIFIED, not PASS.
+
+## Three approved pilot families (not final release)
+For every Editorial Signal asset consult [the three-format editorial system](docs/Editorial%20Signal%20Three%20Styles.md). Use Bold Ideas, Data Analysis and Tech Explainers with shared palette, Dubai Font requirement, independently reviewed facts, no people, and release HOLD until all checks pass. These are pilot directions, not auto-publishing authorization.
